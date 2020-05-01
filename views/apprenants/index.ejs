@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Liste des apprenants</h1>
+    <ul>
+        <% for(let apprenant of apprenants) {%>
+        <li><%= apprenant.nom %> <%= apprenant.prenom %> <a href="/apprenants/<%= apprenant.id %>">Voir détails</a> | 
+        <a href="/apprenants/modifier/<%= apprenant.id %>">Modifier</a> | <a href="/apprenants/Supprimer/<%= apprenant.id %>?_method=DELETE">Supprimer</a></li>
+        <% } %>
+    </ul>
+    <p><a href="/apprenants/new">Ajouter un nouvel apprenant</a></p>
+</body>
+
+</html>

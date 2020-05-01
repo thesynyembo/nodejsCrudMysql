@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "mysql": "*",
+    "express": "*",
+    "ejs": "*",
+    "method-override": "*"
+  },
+  "name": "nodejscrudmysql",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
